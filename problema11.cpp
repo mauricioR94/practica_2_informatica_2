@@ -101,11 +101,11 @@ bool cancelarReserva(uint32_t* sala, char fila, int asiento){
 }
 
 void mostrarSala(const uint32_t* sala){
-    cout << "\nSALA DE CINE\n";
+    cout << "\n+++++++++++++++++++++SALA DE CINE++++++++++++++++++++++\n";
     cout << "    ";
 
     for (int j = 1; j <= ASIENTOS; j++){
-        cout << j << " ";
+        cout << j << "   ";
     }
     cout << endl;
 
@@ -114,10 +114,10 @@ void mostrarSala(const uint32_t* sala){
 
         for (int j = 1; j <= ASIENTOS; j++){
             if (estaReservado(sala[i], j)){  //sala[i] es la fila actual en forma de bits
-                cout << "+ ";
+                cout << "+   ";
             }
             else{
-                cout << "- ";
+                cout << "-   ";
             }
         }
 
